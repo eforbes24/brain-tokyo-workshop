@@ -1,43 +1,13 @@
-# Brain Tokyo Workshop 🧠🗼
+# Eden's WANNs
 
-This repo contains research materials released by members of the Google Brain team in Tokyo.
+This repo contains an augmentation of the brain-tokyo-workshop code for my thesis. Below is a running list of changes made from the original repo which can be found here: https://github.com/google/brain-tokyo-workshop 
 
-## Past Projects ##
+The following files have been changed in the prettyNeatWann folder to try to implement the XOR problem:
 
-### Weight Agnostic Neural Networks ###
+classify_gym.py --> This is where the dataset is being defined (and where most of the problems are being had, as of now one-hot encoding is implemented here); starting line 91
 
-<p align="left">
-  <img width="50%" src="WANNRelease/prettyNEAT/demo/img/swing.gif"></img>
-</p>
+make_env.py --> Here an env for XOR has been specified; lines 43-45
 
-[Code Release](https://github.com/google/brain-tokyo-workshop/tree/master/WANNRelease)
+config.py --> Here, the subfunction for XOR within the general classify architecture is defined; lines 72-78
 
-[Link to Article](https://weightagnostic.github.io/) ([pdf version](https://arxiv.org/abs/1906.04358))
-
-### Learning to Predict Without Looking Ahead: World Models Without Forward Prediction ###
-
-<p align="left">
-  <img width="50%" src="learntopredict/assets/learntopredict.gif"></img>
-</p>
-
-[Code Release](https://github.com/google/brain-tokyo-workshop/tree/master/learntopredict)
-
-[Link to Article](https://learningtopredict.github.io/) ([pdf version](https://arxiv.org/abs/1910.13038))
-
-### Neuroevolution of Self-Interpretable Agents ###
-
-<img width="50%" src="https://storage.googleapis.com/quickdraw-models/sketchRNN/attention/assets/card/attentionagent.gif"></img>
-
-[Code Release](https://github.com/google/brain-tokyo-workshop/tree/master/AttentionAgent)
-([Code for CarRacing Variants](https://github.com/google/brain-tokyo-workshop/tree/master/CarRacingExtension))
-
-<img width="50%" src="https://storage.googleapis.com/quickdraw-models/sketchRNN/attention/assets/card/CarRacingExt2SmallSize.gif"></img>
-
-
-*[Extensions](https://github.com/google/brain-tokyo-workshop/tree/master/CarRacingExtension) to CarRacing-v0 environment released to facilitate future research.*
-
-[Link to Article](https://attentionagent.github.io/) ([pdf version](https://arxiv.org/abs/2003.08165))
-
-## Disclaimer
-
-This is not an official Google product.
+XOR.json --> This is a new file that defines the hyperparameters for the XOR problem (can be found in the folder 'p' within the prettyNeatWann folder)
