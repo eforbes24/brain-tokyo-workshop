@@ -1,6 +1,6 @@
 {
     "task":"swingup",
-    "maxGen": 8,
+    "maxGen": 100,
     "popSize": 32,
     "alg_nReps": 2,
     "alg_speciate": "neat",

@@ -68,6 +68,14 @@ label = [item for sublist in L for item in sublist]
 classify = classify._replace(in_out_labels=label)
 games['digits'] = classify
 
+# > XOR dataset
+xor = classify._replace(\
+  env_name='Classify_XOR')
+L = [list(range(1, xor.input_size)),\
+     list(range(0, xor.output_size))]
+label = [item for sublist in L for item in sublist]
+classify = classify._replace(in_out_labels=label)
+games['XOR'] = xor
 
 # > MNIST [28x28] data set
 mnist784 = classify._replace(\
@@ -169,4 +177,3 @@ bullet_ant = Game(env_name='AntBulletEnv-v0',
   in_out_labels = []
 )
 games['bullet_ant'] = bullet_ant
-
