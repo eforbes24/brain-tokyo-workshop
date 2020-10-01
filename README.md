@@ -1,6 +1,6 @@
 # Eden's WANNs
 
-This repo contains an augmentation of the brain-tokyo-workshop code for my thesis. Below is a running list of changes made from the original repo which can be found here: https://github.com/google/brain-tokyo-workshop 
+This repo contains a forked augmentation of the brain-tokyo-workshop code for my thesis. Below is a running list of changes made from the original repo which can be found here: https://github.com/google/brain-tokyo-workshop 
 
 The following files have been changed in the prettyNeatWann folder to try to implement the XOR problem:
 
