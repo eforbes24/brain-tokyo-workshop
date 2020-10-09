@@ -94,8 +94,9 @@ def xor():
     zoutput = np.logical_xor(z[:, 0] > 0, z[:, 1] > 0)
     zoutput = zoutput.astype(int)
     #zoutput = OneHotEncoder().fit_transform(zoutput).toarray()
-    y = np.zeros((zoutput.size, zoutput.max()+1))
-    y[np.arange(zoutput.size),zoutput] = 1
+    #y = np.zeros((zoutput.size, zoutput.max()+1))
+    #y[np.arange(zoutput.size),zoutput] = 1
+    y = zoutput
     #y = np.max(z)+1
     #y = y.astype(int)
     #zoutput = np.eye(y)[zoutput]
